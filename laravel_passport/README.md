@@ -126,3 +126,11 @@ Route::group(['middleware' => ['json.response']], function () {
 
 - And now you should be able to test your passport code with [postman](https://www.getpostman.com/).
 - Disclaimer: This was done with Laravel 5.8. Things may change in the future that may alter the approach slightly.
+
+
+### If you feel this guide was helpful...
+
+Please give me a follow or subscribe in the following:
+
+|Twitter|Github|Youtube|Twitch|
+|[MathisonProject](https://twitter.com/MathisonProject)|[Divinityfound](https://github.com/Divinityfound)|[Jacob Mathison](https://www.youtube.com/channel/UCNNxB1TRbdJxE_y51sJb9DA)|[MathisonProjects](http://twitch.tv/mathisonprojects)|
