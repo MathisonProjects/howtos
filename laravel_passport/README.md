@@ -10,8 +10,8 @@ php artisan migrate
 php artisan passport:install
 ```
 
-- Add the Larave\Passport\HasApiTokens trait to app/User.php model.
-- Add Passport::routes within boot method of the app/Providers/AuthServiceProvider.php
+- Add the Larave\Passport\HasApiTokens trait to [app/User.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/User.php) model.
+- Add Passport::routes within boot method of the [app/Providers/AuthServiceProvider.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/AuthServiceProvider.php)
 - Set the driver option of the api authentication guard to passport.
 - Create the controller for handling API requests.
 
@@ -19,7 +19,7 @@ php artisan passport:install
 php artisan make:controller Api/AuthController
 ```
 
-- Add the following to the top of /app/Http/Controllers/Api/AuthController.php
+- Add the following to the top of [/app/Http/Controllers/Api/AuthController.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/AuthController.php)
 
 ```php
 use App\User;
@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Validator;
 use Hash;
 ```
 
-- Create the following three functions within /app/Http/Controllers/Api/AuthController.php
+- Create the following three functions within [/app/Http/Controllers/Api/AuthController.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/AuthController.php)
 
 ```php
 public function register (Request $request) {
@@ -74,13 +74,13 @@ public function logout (Request $request) {
 }
 ```
 
-- Create a middleware to force JSON requests.
+- Create a middleware to force JSON responses.
 
 ```sh
 php artisan make:middleware ForceJsonResponse
 ```
 
-- Change your app/Http/Middleware/ForceJsonResponse.php into this.
+- Change your [app/Http/Middleware/ForceJsonResponse.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/ForceJsonResponse.php) into this.
 
 ```php
 <?php
@@ -97,13 +97,13 @@ class ForceJsonResponse
 }
 ```
 
-- Add to $routeMiddleware of the app/Http/Kernel.php file this.
+- Add to $routeMiddleware of the [app/Http/Kernel.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/Kernel.php) file this.
 
 ```php
 'json.response' => \App\Http\Middleware\ForceJsonResponse::class,
 ```
 
-- Add to routes/api.php the following routes:
+- Add to [routes/api.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/api.php) the following routes:
 
 ```php
 Route::group(['middleware' => ['json.response']], function () {
@@ -124,5 +124,5 @@ Route::group(['middleware' => ['json.response']], function () {
 });
 ```
 
-- And now you should be able to test your passport code with postman.
+- And now you should be able to test your passport code with [postman](https://www.getpostman.com/).
 - Disclaimer: This was done with Laravel 5.8. Things may change in the future that may alter the approach slightly.
