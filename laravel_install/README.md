@@ -1,4 +1,4 @@
-#Install Laravel
+# Install Laravel
 
 - Install Clean Laravel Instance
 
@@ -14,7 +14,7 @@ php artisan key:generate
 ```
 - Update .env.example to .env
 - Create a DB Instance for Laravel
-- Update your .env variables to connect to the database.
+- Update your [.env]() variables to connect to the database.
 - Migrate your databases to verify that the variables are correct.
 
 ```
