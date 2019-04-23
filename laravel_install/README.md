@@ -24,6 +24,8 @@ php artisan migrate
 - Configure your host (or vhost) to point to your public directory
 - Your laravel instance is good to go!
 
+- Happy Coding!!!
+
 
 ### If you feel this guide was helpful...
 
