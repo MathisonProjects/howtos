@@ -7,14 +7,14 @@ php artisan make:command YourNewCommandName
 php artisan make:job YourNewJobName
 ```
 
-- Your files will be located in app/Jobs/YourNewJobName.php and app/Console/Commands/YourNewCommandName.php
-- In app/Console/Commands/YourNewCommandName.php, add into your head:
+- Your files will be located in [app/Jobs/YourNewJobName.php](https://github.com/Divinityfound/howtos/blob/master/laravel_console_and_jobs/YourNewJobName.php) and [app/Console/Commands/YourNewCommandName.php](https://github.com/Divinityfound/howtos/blob/master/laravel_console_and_jobs/YourNewCommandName.php)
+- In [app/Console/Commands/YourNewCommandName.php](https://github.com/Divinityfound/howtos/blob/master/laravel_console_and_jobs/YourNewCommandName.php), add into your head:
 
 ```php
 use App\Jobs\YourNewJobName;
 ```
 
-- In app/Console/Commands/YourNewCommandName.php, add into your $signature variable the name of the command to fire from your console and into the $description variable the nature of your command. Inside of $signature, you may add arguments
+- In [app/Console/Commands/YourNewCommandName.php](https://github.com/Divinityfound/howtos/blob/master/laravel_console_and_jobs/YourNewCommandName.php), add into your $signature variable the name of the command to fire from your console and into the $description variable the nature of your command. Inside of $signature, you may add arguments
 
 ```php
 protected $signature = 'fire:yournewcommand {arg1} {arg2}'
@@ -30,7 +30,7 @@ public function handle() {
 ```
 
 - Save and close out your file.
-- Open the file app/Jobs/YourNewJobName.php.
+- Open the file [app/Jobs/YourNewJobName.php](https://github.com/Divinityfound/howtos/blob/master/laravel_console_and_jobs/YourNewJobName.php).
 - Add the arguments you wish to use as public in your class.
 
 ```php
