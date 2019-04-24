@@ -1,7 +1,7 @@
 # How to use Laravel APIs and Authorization
 
 ## Programs
-- Postman
+- [Postman](http://getpostman.com)
 
 ## Commands
 ```sh
@@ -9,8 +9,8 @@ php artisan make:controller ApiEndpointController
 ```
 
 ## Files
-- routes/api.php
-- app/Http/Controllers/ApiEndpointController.php
+- [routes/api.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/api.php)
+- [app/Http/Controllers/ApiEndpointController.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/ApiEndpointController.php)
 
 
 ### Simple API
@@ -20,7 +20,7 @@ php artisan make:controller ApiEndpointController
 php artisan make:controller ApiEndpointController
 ```
 
-- Open your file routes/api.php.
+- Open your file [routes/api.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/api.php).
 - Add the following route to your file.
 
 ```php
@@ -28,7 +28,7 @@ php artisan make:controller ApiEndpointController
 Route::post('apiEndpointName', 'ApiEndpointController@apiEndpointName');
 ```
 
-- Open your file app/Http/Controllers/ApiEndpointController.php
+- Open your file [app/Http/Controllers/ApiEndpointController.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/ApiEndpointController.php)
 - Add the following method to your file.
 
 ```php
@@ -45,7 +45,7 @@ Route::post('apiEndpointName', 'ApiEndpointController@apiEndpointName');
 - Click send, and you will receive the response "Hello, World!"
 
 ### Prefixed API
-- Open your file routes/api.php.
+- Open your file [routes/api.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/api.php).
 - Add the following prefix and route to your file.
 
 ```php
@@ -64,7 +64,7 @@ Route::prefix('prefix')->group(function() {
 - Click send, and you will receive the response "Hello, World!"
 
 ### API with Variables
-- Open your file routes/api.php.
+- Open your file [routes/api.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/api.php).
 - Add the following route to your file inside of the prefix group.
 
 ```php
@@ -72,7 +72,7 @@ Route::prefix('prefix')->group(function() {
 	Route::post('apiEndpointNameTwo/{slug}', 'ApiEndpointController@apiEndpointNameTwo');
 ```
 
-- Open your file app/Http/Controllers/ApiEndpointController.php
+- Open your file [app/Http/Controllers/ApiEndpointController.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/ApiEndpointController.php)
 - Add the following method to your file.
 
 ```php
@@ -107,7 +107,7 @@ Route::prefix('prefix')->group(function() {
 
 ### API Authorization
 
-- Open your file routes/api.php.
+- Open your file [routes/api.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/api.php).
 - Add the following route to your file inside of the prefix group.
 
 ```php
@@ -115,7 +115,7 @@ Route::prefix('prefix')->group(function() {
 	Route::post('authorizationMethod'      , 'ApiEndpointController@authorizationMethod');
 ```
 
-- Open your file app/Http/Controllers/ApiEndpointController.php
+- Open your file [app/Http/Controllers/ApiEndpointController.php](https://github.com/Divinityfound/howtos/blob/master/laravel_simple_api/ApiEndpointController.php)
 - Add the following method to your file.
 
 ```php
