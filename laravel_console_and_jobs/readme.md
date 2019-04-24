@@ -30,7 +30,7 @@ public function handle() {
 ```
 
 - Save and close out your file.
-- Open the file [YourNewJobName.php](https://github.com/Divinityfound/howtos/blob/master/laravel_console_and_jobs/YourNewJobName.php, "app/Jobs/YourNewJobName.php").
+- Open the file [app/Jobs/YourNewJobName.php](https://github.com/Divinityfound/howtos/blob/master/laravel_console_and_jobs/YourNewJobName.php).
 - Add the arguments you wish to use as public in your class.
 
 ```php

@@ -23,10 +23,9 @@ Please give me a follow or subscribe in the following:
 
 ## Planned Guides
 
-- API Use
+- Laravel API CORS
 - Providers
 - Mail
-- Jobs
 - AWS Integration
 - AWS Queuing
 - AWS Email
