@@ -75,7 +75,7 @@ MAIL_ENCRYPTION=SSL
     }
 ```
 
-- To dispatch your job (email), please refer to my [Laravel Console and Jobs](https://github.com/Divinityfound/howtos/tree/master/laravel_console_and_jobs) tutorial. An example of how to structure your command is available above in SendEmail.command.php
+- To dispatch your job (email), please refer to my [Laravel Console and Jobs](https://github.com/Divinityfound/howtos/tree/master/laravel_console_and_jobs) tutorial. An example of how to structure your command is available above in [SendEmail.command.php](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/SendEmail.command.php)
 - Upon firing, you will receive an email (or a related error) at your target email.
 - Possible solutions to look out for would be in the [.env](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/.env)'s Encryption. TSL and SSL are important and need to refer to the port you are using.
 
