@@ -13,10 +13,10 @@ php artisan make:command SendEmail
 ```
 
 ## Files
-- app/Jobs/SendEmail.php
-- app/Console/Commands/SendEmail.php
-- .env
-- resources/views/mail/ExampleEmail.blade.php
+- [app/Jobs/SendEmail.php](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/SendEmail.job.php)
+- [app/Console/Commands/SendEmail.php](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/SendEmail.command.php)
+- [.env](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/.env)
+- [resources/views/mail/ExampleEmail.blade.php](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/ExampleEmail.blade.php)
 
 ## Creating the Emailing Structure
 
@@ -27,7 +27,7 @@ php artisan make:job SendEmail
 php artisan make:command SendEmail
 ```
 
-- Create the template for sending your email inside of the directory /resources/views/mail/SendEmail.blade.php
+- Create the template for sending your email inside of the directory /resources/views/mail/ExampleEmail.blade.php
 - Place the following placeholder information inside of the email.
 ```php
 {{ $data['target'] }}
@@ -36,7 +36,7 @@ php artisan make:command SendEmail
 ```
 
 - Create your email from [Gmail](http://gmail.com). Log the username and password.
-- Inside of .env, modify a few of the following keys with your credentials for gmail's SMTP service.
+- Inside of [.env](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/.env), modify a few of the following keys with your credentials for gmail's SMTP service.
 
 ```
 MAIL_DRIVER=smtp
@@ -47,7 +47,7 @@ MAIL_PASSWORD=YOURPASSWORD
 MAIL_ENCRYPTION=SSL
 ```
 
-- Open your file app/Jobs/SendEmail.php.
+- Open your file [app/Jobs/SendEmail.php](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/SendEmail.job.php).
 - Add the following around construct.
 
 ```php
@@ -77,7 +77,7 @@ MAIL_ENCRYPTION=SSL
 
 - To dispatch your job (email), please refer to my [Laravel Console and Jobs](https://github.com/Divinityfound/howtos/tree/master/laravel_console_and_jobs) tutorial. An example of how to structure your command is available above in SendEmail.command.php
 - Upon firing, you will receive an email (or a related error) at your target email.
-- Possible solutions to look out for would be in the .env's Encryption. TSL and SSL are important and need to refer to the port you are using.
+- Possible solutions to look out for would be in the [.env](https://github.com/Divinityfound/howtos/blob/master/laravel_mail/.env)'s Encryption. TSL and SSL are important and need to refer to the port you are using.
 
 - DISCLAIMER: There are sometimes security concerns that google will bring up if it notices strange activity, and there are daily limits for you to be considerate of. Added, there is no guarantee that your email will be delivered without being marked as spam. There are a plethora of other services available (eg: Mailgun, AWS Simple Mail Service, Mailchimp, etc) that will up your delivery rate.
 

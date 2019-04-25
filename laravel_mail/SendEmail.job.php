@@ -26,7 +26,7 @@ class SendEmail implements ShouldQueue
 
     public function handle() {
         $data = $this->data;
-        Mail::send('mail.simpleEmail', ['data' => $data], function($message) use ($data) {
+        Mail::send('mail.ExampleEmail', ['data' => $data], function($message) use ($data) {
             $message->from('YOUREMAIL@gmail.com', 'Mail Job');
             $message->to($data['target'], 'Target Name');
             $message->subject($data['subject']);
