@@ -1,5 +1,15 @@
 # Install Laravel Passport (PHP Only)
 
+## Files
+- [app/User.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/User.php)
+- [app/Providers/AuthServiceProvider.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/AuthServiceProvider.php)
+- [app/Http/Controllers/Api/AuthController.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/AuthController.php)
+- [app/Http/Middleware/ForceJsonResponse.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/ForceJsonResponse.php)
+- [app/Http/Kernel.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/Kernel.php)
+- [routes/api.php](https://github.com/Divinityfound/howtos/blob/master/laravel_passport/api.php)
+
+## Guide
+
 - Install a clean [Laravel](https://github.com/Divinityfound/howtos/tree/master/laravel_install) instance.
 - Install the basic authentication for Laravel and Laravel Passport
 

@@ -27,6 +27,8 @@ Please give me a follow or subscribe in the following:
 - Providers
 - AWS Integration
 - AWS Queuing
+- Cloudflare SSL
+- Setup Zoho Email
 
 ## How To Translations Incoming
 - Russian
