@@ -2,17 +2,21 @@
 
 - Install Clean Laravel Instance
 
-```
+```sh
 git clone https://github.com/laravel/laravel.git LARAVEL_DIR/
 cd LARAVEL_DIR/
 chmod -R 755 ./.
 chmod -R 777 ./bootstrap
 chmod -R 777 ./storage
 composer install
-php artisan key:generate
-
 ```
 - Update .env.example to .env
+- Create your key with the following command
+
+```sh
+php artisan key:generate
+```
+
 - Create a DB Instance for Laravel
 - Update your [.env](https://github.com/Divinityfound/howtos/blob/master/laravel_install/.env) variables to connect to the database.
 - Migrate your databases to verify that the variables are correct.
