@@ -23,12 +23,14 @@ Please give me a follow or subscribe in the following:
 
 ## Planned Guides
 
-- Laravel API CORS
 - Providers
 - AWS Integration
 - AWS Queuing
 - Cloudflare SSL
 - Setup Zoho Email
+- JWT Tokenization
+- VueJS Setup
+- Git Deployment Process
 
 ## How To Translations Incoming
 - Russian

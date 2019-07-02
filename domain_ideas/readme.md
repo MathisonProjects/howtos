@@ -12,6 +12,8 @@ Here are the commands to run on your ubuntu server:
 ./domain_checker YourTopLevelDomainWithoutExt
 ```
 
+After running, it will create a file which will show all of the available domains you can purchase.
+
 ### If you feel this guide was helpful...
 
 Please give me a follow or subscribe in the following:
